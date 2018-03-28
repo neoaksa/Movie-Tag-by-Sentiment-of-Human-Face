@@ -12,7 +12,7 @@ def YtoOutput(y):
     output[0,int(y)] = 1.0
     return output
 
-'''
+
 # read the file of image and classification
 image_path = "/media/d/human face/cohn-kanade-images/"
 class_path = "/home/jie/Documents/Emotion/"
@@ -54,21 +54,21 @@ y_tag = [YtoOutput(item) for item in y]
 y_tag = np.vstack(y_tag)
 np.save("/home/jie/Documents/x.npy",x)
 np.save("/home/jie/Documents/y.npy",y_tag)
-'''
 
-x = np.load("/home/jie/Documents/x.npy")
-y = np.load("/home/jie/Documents/y.npy")
-# split training and validation dataset
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=27)
-clf = MLPClassifier(hidden_layer_sizes=(100,100,100), max_iter=100,learning_rate="adaptive",
-                    learning_rate_init=0.1,momentum=0.9,activation="logistic",
-                     solver='adam', verbose=True,  random_state=10, batch_size=10)
 
-clf.fit(x_train, y_train)
-joblib.dump(clf, '/home/jie/Documents/clf.pkl')
-
-# clf = joblib.load('/home/jie/Documents/clf.pkl')
-y_pred = clf.predict(x_test)
-print(accuracy_score(y_test, y_pred))
+# x = np.load("/home/jie/Documents/x.npy")
+# y = np.load("/home/jie/Documents/y.npy")
+# # split training and validation dataset
+# x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=27)
+# clf = MLPClassifier(hidden_layer_sizes=(100,100,100), max_iter=100,learning_rate="adaptive",
+#                     learning_rate_init=0.1,momentum=0.9,activation="logistic",
+#                      solver='adam', verbose=True,  random_state=10, batch_size=10)
+#
+# clf.fit(x_train, y_train)
+# joblib.dump(clf, '/home/jie/Documents/clf.pkl')
+#
+# # clf = joblib.load('/home/jie/Documents/clf.pkl')
+# y_pred = clf.predict(x_test)
+# print(accuracy_score(y_test, y_pred))
 
 
