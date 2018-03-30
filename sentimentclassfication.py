@@ -57,7 +57,7 @@ for key, item in dic_class.items():
     # img = cv2.drawKeypoints(img,kp,None)
     # 2. gradient
     # img = cv2.Laplacian(img, cv2.CV_64F)
-    img = cv2.Sobel(img, cv2.CV_8U, 1, 0, ksize=5)
+    img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)
     # img = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
     # 3. canny
     # img = cv2.Canny(img, 100, 200)
@@ -89,9 +89,9 @@ x = np.load("/home/jie/Documents/x.npy")
 y = np.load("/home/jie/Documents/y.npy")
 # split training and validation dataset
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=27)
-clf = MLPClassifier(hidden_layer_sizes=(200,100), max_iter=50,learning_rate="adaptive",
+clf = MLPClassifier(hidden_layer_sizes=(100,100), max_iter=100,learning_rate="adaptive",
                     learning_rate_init=0.3,momentum=0.5,activation="logistic",
-                     solver='sgd', verbose=True,  random_state=10, batch_size=10)
+                     solver='sgd', verbose=True,  random_state=10, batch_size=20)
 
 clf.fit(x_train, y_train)
 joblib.dump(clf, '/home/jie/Documents/clf.pkl')
