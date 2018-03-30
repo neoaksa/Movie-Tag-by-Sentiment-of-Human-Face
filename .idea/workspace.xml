@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ce4ecc-273d-4aaa-8e77-42661b0546a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/sentimentclassfication.py" afterPath="$PROJECT_DIR$/sentimentclassfication.py" />
+      <change afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model param" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/Liris-6963.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/document/Liris-6963.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentimentclassfication.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentimentclassfication.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +21,8 @@
       <file leaf-file-name="facedetection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facedetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="440">
+              <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
                 <element signature="e#1#19#0" expanded="true" />
               </folding>
@@ -28,11 +33,44 @@
       <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state relative-caret-position="1166">
+              <caret line="101" lean-forward="true" selection-start-line="86" selection-end-line="101" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TEST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model param" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model param">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="616">
+                <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -42,9 +80,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>break</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +97,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/facedetection.py" />
+        <option value="$PROJECT_DIR$/main.ipynb" />
+        <option value="$PROJECT_DIR$/TEST.py" />
+        <option value="$PROJECT_DIR$/model param" />
         <option value="$PROJECT_DIR$/sentimentclassfication.py" />
       </list>
     </option>
@@ -80,34 +127,10 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Movie Tag by Sentiment of Human Face" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Movie Tag by Sentiment of Human Face" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -125,7 +148,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.sentimentclassfication">
-    <configuration name="facedetection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TEST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Movie Tag by Sentiment of Human Face" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -136,7 +160,24 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="facedetection" type="PythonConfigurationType" factoryName="Python">
       <module name="Movie Tag by Sentiment of Human Face" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/facedetection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -144,6 +185,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="sentimentclassfication" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Movie Tag by Sentiment of Human Face" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -154,26 +196,40 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Movie Tag by Sentiment of Human Face" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentimentclassfication.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.facedetection" />
-      <item index="1" class="java.lang.String" itemvalue="Python.sentimentclassfication" />
+    <configuration name="Movie Tag by Sentiment of Human Face" type="Python.Ipnb" factoryName="Jupyter Notebook">
+      <module name="Movie Tag by Sentiment of Human Face" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+    </configuration>
+    <list>
+      <item itemvalue="Jupyter Notebook.Movie Tag by Sentiment of Human Face" />
+      <item itemvalue="Python.facedetection" />
+      <item itemvalue="Python.sentimentclassfication" />
+      <item itemvalue="Python.TEST" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.sentimentclassfication" />
-        <item index="1" class="java.lang.String" itemvalue="Python.facedetection" />
+      <list>
+        <item itemvalue="Python.sentimentclassfication" />
+        <item itemvalue="Python.TEST" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -188,45 +244,55 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-3" width="1920" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1421875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3302564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1421875" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32947367" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32947367" />
+      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32842106" />
+      <window_info anchor="bottom" x="21" y="693" width="1920" height="321" id="Run" order="2" weight="0.32947367" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32947367" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39789474" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3302564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1421875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1421875" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3302564" />
+      <window_info anchor="bottom" id="Python Console" order="9" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39897436" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -234,19 +300,170 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="41" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sentimentclassfication.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sentimentclassfication.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="y_train.ravel()" />
+        <watch expression="crop_img.flatten()" />
+        <watch expression="path[:-12]+&quot;.png&quot;" />
+        <watch expression="key[len(class_path):]" />
+        <watch expression="dic_class[key]" />
+        <watch expression="pca.components_" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model param">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="616">
+            <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facedetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model param">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="506">
+            <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="59" column="48" lean-forward="true" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facedetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facedetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facedetection.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
+          <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -256,7 +473,7 @@
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1342">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -266,7 +483,7 @@
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
+          <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -276,7 +493,7 @@
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
-          <caret line="58" column="26" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -286,7 +503,7 @@
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
+          <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -296,7 +513,7 @@
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
-          <caret line="48" column="95" lean-forward="false" selection-start-line="48" selection-start-column="95" selection-end-line="48" selection-end-column="95" />
+          <caret line="48" column="95" selection-start-line="48" selection-start-column="95" selection-end-line="48" selection-end-column="95" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -305,8 +522,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -316,7 +532,7 @@
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -325,8 +541,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -336,34 +551,25 @@
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
-          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="432" column="0" lean-forward="false" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="13" />
+          <caret line="32" column="13" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -373,21 +579,21 @@
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/shape_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -397,7 +603,7 @@
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="13" />
+          <caret line="32" column="13" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
@@ -407,61 +613,79 @@
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
-          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="432" column="0" lean-forward="false" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/shape_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="23" />
+        <state relative-caret-position="440">
+          <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        <state relative-caret-position="1166">
+          <caret line="101" lean-forward="true" selection-start-line="86" selection-end-line="101" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model param">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="616">
+            <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,31 @@
+### 60% correct
+```python
+clf = MLPClassifier(hidden_layer_sizes=(100,100), max_iter=100,learning_rate="adaptive",
+                    learning_rate_init=0.1,momentum=0.5,activation="logistic",
+                     solver='sgd', verbose=True,  random_state=10, batch_size=10)
+```
+                     
+### 33% overfit
+```python
+clf = MLPClassifier(hidden_layer_sizes=(500,500), max_iter=100,learning_rate="adaptive",
+                    learning_rate_init=0.1,momentum=0.5,activation="logistic",
+                     solver='sgd', verbose=True,  random_state=10, batch_size=10)
+```
+
+### 42%                     
+```python
+clf = MLPClassifier(hidden_layer_sizes=(500), max_iter=100,learning_rate="adaptive",
+                    learning_rate_init=0.1,momentum=0.5,activation="logistic",
+                     solver='sgd', verbose=True,  random_state=10, batch_size=10)                     
+```
+### 74% with gradient img with x axis
+```python
+img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)
+MLP 100*100
+```
+
+### 50% with gradient img with y axis
+```python
+img = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
+MLP 100*100
+```
