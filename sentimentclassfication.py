@@ -37,7 +37,7 @@ dlib_db = "./dlib/shape_predictor_68_face_landmarks.dat"
 # cut pixel of x and y axis
 resize_pixel = 200
 cut_pixel_x = int(resize_pixel * 0.15)
-cut_pixel_y = int(resize_pixel * 0.15)
+cut_pixel_y = int(resize_pixel * 0)
 pixel_size= resize_pixel * resize_pixel
 x = np.empty((0, pixel_size), dtype=np.float16)
 y = np.empty((0,1))
@@ -50,26 +50,13 @@ for key, item in dic_class.items():
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x_pix, y_pix, w, h) in faces:
         # crop the face from picture, move lower to reduce the top of head
-        crop_img = gray[y_pix  + cut_pixel_y:y_pix - cut_pixel_y + h, x_pix + cut_pixel_x:x_pix - cut_pixel_x + w]
+        crop_img = gray[y_pix + cut_pixel_y:y_pix - cut_pixel_y + h, x_pix + cut_pixel_x:x_pix - cut_pixel_x + w]
     img = cv2.resize(crop_img,(resize_pixel,resize_pixel))
     # feature extraction
-    # 1. SIFT
-    # need to run "pip install opencv-contrib-python" if missing xfeature2d
-    # sift = cv2.xfeatures2d.SIFT_create()
-    # kp = sift.detect(crop_img,None)
-    # img = cv2.drawKeypoints(img,kp,None)
-    # 2. gradient
-    # img = cv2.Laplacian(img, cv2.CV_64F)
-    # img = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
-    # img_x = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=3)
-    # img_y = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=3)
-    # img = cv2.phase(img_x,img_y,angleInDegrees=False, angle=math.pi/2)
-    # 3. canny
-    # img = cv2.Canny(img, 100, 200)
-    # 4. Dlib
+    # 4. Dlib， Dlib need to be used with other function
     predictor = dlib.shape_predictor(dlib_db)
-    rect = dlib.rectangle(0,0, resize_pixel,resize_pixel)
-    landmarks = np.matrix([[p.x, p.y] for p in predictor(img,rect).parts()])
+    rect = dlib.rectangle(0, 0, resize_pixel, resize_pixel)
+    landmarks = np.matrix([[p.x, p.y] for p in predictor(img, rect).parts()])
     landmarks = np.squeeze(np.array(landmarks))
     FACE_POINTS = [
         # list(range(0, 17)),  # JAWLINE_POINTS
@@ -84,8 +71,22 @@ for key, item in dic_class.items():
     for face_lists in FACE_POINTS:
         for point in face_lists[1:]:
             cv2.line(img, (landmarks[point - 1][0], landmarks[point - 1][1]),
-                     (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 5)
-    img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=3)
+                     (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 8)
+    # 1. SIFT
+    # need to run "pip install opencv-contrib-python" if missing xfeature2d
+    # sift = cv2.xfeatures2d.SIFT_create()
+    # kp = sift.detect(crop_img,None)
+    # img = cv2.drawKeypoints(img,kp,None)
+    # 2. gradient
+    # img = cv2.Laplacian(img, cv2.CV_64F)  # Laplacian
+    img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=3)   # gradient by x axis
+    # img = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)   # gradient by y axis
+    # img_x = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=5) # gradient by degree
+    # img_y = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=5) # gradient by degree
+    # img = cv2.phase(img_x,img_y,angleInDegrees=False, angle=math.pi/2)    # gradient by degree
+    # 3. canny
+    # img = cv2.Canny(img, 100, 200)
+
     # cut pixel
     # img = img[cut_pixel_x:resize_pixel-cut_pixel_x,cut_pixel_y:resize_pixel-cut_pixel_y]
     # PCA
@@ -99,7 +100,7 @@ for key, item in dic_class.items():
         break
     # normalization
     img = img / 255
-    # print(len(landmarks.flatten().shape))
+    print(len(img.flatten()))
     x = np.vstack((x, img.flatten()))
     y = np.vstack((y, dic_class[key]))
 
@@ -115,7 +116,7 @@ x = np.load("/home/jie/Documents/x.npy")
 y = np.load("/home/jie/Documents/y.npy")
 # split training and validation dataset
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=27)
-clf = MLPClassifier(hidden_layer_sizes=(50,25), max_iter=50,learning_rate="adaptive",
+clf = MLPClassifier(hidden_layer_sizes=(100,100), max_iter=50,learning_rate="adaptive",
                     learning_rate_init=0.3,momentum=0.2,activation="logistic",
                      solver='sgd', verbose=True,  random_state=20, batch_size=10)
 clf.fit(x_train, y_train)
