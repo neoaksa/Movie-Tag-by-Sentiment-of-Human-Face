@@ -21,7 +21,7 @@ clf = MLPClassifier(hidden_layer_sizes=(500), max_iter=100,learning_rate="adapti
 ### 74% with gradient img with x axis
 ```python
 img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)
-MLP 100*100
+MLP 100*100  
 ```
 
 ### 50% with gradient img with y axis

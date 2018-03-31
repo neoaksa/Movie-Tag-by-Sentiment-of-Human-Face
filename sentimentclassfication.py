@@ -7,16 +7,18 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.externals import joblib
 from sklearn.decomposition import PCA
+import math
+import dlib
 
 def YtoOutput(y):
     output = np.zeros(shape=(1,8))
     output[0,int(y)] = 1.0
     return output
 
-
 # read the file of image and classification
 image_path = "/media/d/human face/cohn-kanade-images/"
 class_path = "/home/jie/Documents/Emotion/"
+
 
 # read motion files
 # dictionary for saving classification corresponding image path
@@ -31,12 +33,13 @@ for root, dictionaries, files in os.walk(class_path):
 
 # trained face classifier
 face_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_frontalface_default.xml')
+dlib_db = "./dlib/shape_predictor_68_face_landmarks.dat"
 # cut pixel of x and y axis
 resize_pixel = 200
-cut_pixel_x = 30
-cut_pixel_y = 40
-pixel_size= (resize_pixel-2*cut_pixel_x)*(resize_pixel-2*cut_pixel_y)
-x = np.empty((0,pixel_size),dtype=np.float64)
+cut_pixel_x = int(resize_pixel * 0.15)
+cut_pixel_y = int(resize_pixel * 0.15)
+pixel_size= resize_pixel * resize_pixel
+x = np.empty((0, pixel_size), dtype=np.float16)
 y = np.empty((0,1))
 for key, item in dic_class.items():
     img_files = image_path + key[len(class_path):]
@@ -46,8 +49,8 @@ for key, item in dic_class.items():
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x_pix, y_pix, w, h) in faces:
-        # crop the face from picture
-        crop_img = gray[y_pix:y_pix + h, x_pix:x_pix + w]
+        # crop the face from picture, move lower to reduce the top of head
+        crop_img = gray[y_pix  + cut_pixel_y:y_pix - cut_pixel_y + h, x_pix + cut_pixel_x:x_pix - cut_pixel_x + w]
     img = cv2.resize(crop_img,(resize_pixel,resize_pixel))
     # feature extraction
     # 1. SIFT
@@ -57,12 +60,34 @@ for key, item in dic_class.items():
     # img = cv2.drawKeypoints(img,kp,None)
     # 2. gradient
     # img = cv2.Laplacian(img, cv2.CV_64F)
-    img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)
     # img = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
+    # img_x = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=3)
+    # img_y = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=3)
+    # img = cv2.phase(img_x,img_y,angleInDegrees=False, angle=math.pi/2)
     # 3. canny
     # img = cv2.Canny(img, 100, 200)
+    # 4. Dlib
+    predictor = dlib.shape_predictor(dlib_db)
+    rect = dlib.rectangle(0,0, resize_pixel,resize_pixel)
+    landmarks = np.matrix([[p.x, p.y] for p in predictor(img,rect).parts()])
+    landmarks = np.squeeze(np.array(landmarks))
+    FACE_POINTS = [
+        # list(range(0, 17)),  # JAWLINE_POINTS
+        list(range(17, 22)),  # RIGHT_EYEBROW_POINTS
+        list(range(22, 27)),  # LEFT_EYEBROW_POINTS
+        list(range(27, 36)),  # NOSE_POINTS
+        list(range(36, 42)),  # RIGHT_EYE_POINTs
+        list(range(42, 48)),  # LEFT_EYE_POINTS
+        list(range(48, 61)),  # MOUTH_OUTLINE_POINTS
+        list(range(61, 68))]  # MOUTH_INNER_POINTS
+    # link related points
+    for face_lists in FACE_POINTS:
+        for point in face_lists[1:]:
+            cv2.line(img, (landmarks[point - 1][0], landmarks[point - 1][1]),
+                     (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 5)
+    img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=3)
     # cut pixel
-    img = img[cut_pixel_x:200-cut_pixel_x,cut_pixel_y:200-cut_pixel_y]
+    # img = img[cut_pixel_x:resize_pixel-cut_pixel_x,cut_pixel_y:resize_pixel-cut_pixel_y]
     # PCA
     # pca = PCA(n_components=6, whiten=True,svd_solver='randomized',)
     # pca.fit(img)
@@ -74,7 +99,7 @@ for key, item in dic_class.items():
         break
     # normalization
     img = img / 255
-    print(len(img.flatten()))
+    # print(len(landmarks.flatten().shape))
     x = np.vstack((x, img.flatten()))
     y = np.vstack((y, dic_class[key]))
 
@@ -85,19 +110,21 @@ np.save("/home/jie/Documents/x.npy",x)
 np.save("/home/jie/Documents/y.npy",y_tag)
 print("saved!")
 
+# training the dataset
 x = np.load("/home/jie/Documents/x.npy")
 y = np.load("/home/jie/Documents/y.npy")
 # split training and validation dataset
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=27)
-clf = MLPClassifier(hidden_layer_sizes=(100,100), max_iter=100,learning_rate="adaptive",
-                    learning_rate_init=0.3,momentum=0.5,activation="logistic",
-                     solver='sgd', verbose=True,  random_state=10, batch_size=20)
-
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=27)
+clf = MLPClassifier(hidden_layer_sizes=(50,25), max_iter=50,learning_rate="adaptive",
+                    learning_rate_init=0.3,momentum=0.2,activation="logistic",
+                     solver='sgd', verbose=True,  random_state=20, batch_size=10)
 clf.fit(x_train, y_train)
 joblib.dump(clf, '/home/jie/Documents/clf.pkl')
 
 # clf = joblib.load('/home/jie/Documents/clf.pkl')
 y_pred = clf.predict(x_test)
 print(accuracy_score(y_test, y_pred))
+
+
 
 
