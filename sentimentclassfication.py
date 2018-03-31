@@ -117,20 +117,20 @@ x = np.load("/home/jie/Documents/x.npy")
 y = np.load("/home/jie/Documents/y.npy")
 # --------------------------------
 # PCA analysis to reduce features
-pca = PCA(n_components=75, whiten=True,svd_solver='randomized',)
+pca = PCA(n_components=60, whiten=True,svd_solver='randomized',)
 x = pca.fit_transform(x)
 # --------------------------------
 # split training and validation dataset
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=50)
-# sss = StratifiedShuffleSplit(n_splits=3, test_size=0.5, random_state=0)
-#     for train_index, test_index in sss.split(x, y):
-#         x_train, x_test = x[train_index,:], x[test_index,:]
-#         y_train, y_test = y[train_index,:], y[test_index,:]
+# x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=50)
+sss = StratifiedShuffleSplit(n_splits=3, test_size=0.2, random_state=0)
+for train_index, test_index in sss.split(x,y):
+    x_train, x_test = x[train_index,:], x[test_index,:]
+    y_train, y_test = y[train_index,:], y[test_index,:]
 # --------------------------------
 # MLP model
-clf = MLPClassifier(hidden_layer_sizes=(25,15), max_iter=500,learning_rate="adaptive",
-                    learning_rate_init=0.01,momentum=0.9,activation="logistic",
-                     solver='sgd', verbose=True,  random_state=10, batch_size=10)
+clf = MLPClassifier(hidden_layer_sizes=(31,25), max_iter=500,learning_rate="adaptive",
+                    learning_rate_init=0.1,momentum=0.1,activation="logistic",
+                     solver='sgd', verbose=True,  random_state=20, batch_size=10)
 clf.fit(x_train, y_train)
 # save model
 joblib.dump(clf, '/home/jie/Documents/clf.pkl')
@@ -140,7 +140,7 @@ joblib.dump(clf, '/home/jie/Documents/clf.pkl')
 # clf = joblib.load('/home/jie/Documents/clf.pkl')
 y_pred = clf.predict(x_test)
 print(accuracy_score(y_test, y_pred))
-print(confusion_matrix(y_test,y_pred))
+print(confusion_matrix(y_test.argmax(axis=1),y_pred.argmax(axis=1)))
 
 
 
