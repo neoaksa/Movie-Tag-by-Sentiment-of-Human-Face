@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ce4ecc-273d-4aaa-8e77-42661b0546a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/Liris-6963.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/document/Liris-6963.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facedetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/facedetection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sentimentclassfication.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentimentclassfication.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,23 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="facedetection.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="facedetection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facedetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="352">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
-                <element signature="e#1#19#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="111" lean-forward="true" selection-start-line="26" selection-end-line="111" />
+            <state relative-caret-position="-695">
+              <caret line="110" column="31" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="31" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -40,11 +44,8 @@
       <file leaf-file-name="TEST.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TEST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -83,6 +84,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>break</find>
+      <find>resize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,11 +93,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/facedetection.py" />
         <option value="$PROJECT_DIR$/main.ipynb" />
-        <option value="$PROJECT_DIR$/TEST.py" />
         <option value="$PROJECT_DIR$/model param" />
+        <option value="$PROJECT_DIR$/TEST.py" />
         <option value="$PROJECT_DIR$/sentimentclassfication.py" />
+        <option value="$PROJECT_DIR$/facedetection.py" />
       </list>
     </option>
   </component>
@@ -142,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sentimentclassfication">
+  <component name="RunManager" selected="Python.facedetection">
     <configuration name="TEST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Movie Tag by Sentiment of Human Face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -273,21 +275,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1421875" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3302564" />
-      <window_info anchor="bottom" id="Python Console" order="9" visible="true" weight="0.32923076" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39897436" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="9" visible="true" weight="0.32923076" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -295,19 +297,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="77" />
+      <option name="time" value="86" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="y_train.ravel()" />
         <watch expression="crop_img.flatten()" />
-        <watch expression="path[:-12]+&quot;.png&quot;" />
-        <watch expression="key[len(class_path):]" />
-        <watch expression="dic_class[key]" />
-        <watch expression="pca.components_" />
-        <watch expression="landmarks.flatten()" />
-        <watch expression="landmarks[point]" />
-        <watch expression="landmarks[point][0]" />
+        <watch expression="crop_img.reshape(crop_img.shape[0],-1)" />
       </configuration>
     </watches-manager>
   </component>
@@ -316,9 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -354,7 +346,7 @@
         <state relative-caret-position="440">
           <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -363,9 +355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -401,7 +390,7 @@
         <state relative-caret-position="440">
           <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -410,9 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -448,7 +434,7 @@
         <state relative-caret-position="440">
           <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,9 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -495,7 +478,7 @@
         <state relative-caret-position="440">
           <caret line="21" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,7 +498,7 @@
         <state relative-caret-position="726">
           <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -535,7 +518,7 @@
         <state relative-caret-position="704">
           <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,7 +538,7 @@
         <state relative-caret-position="704">
           <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,7 +558,7 @@
         <state relative-caret-position="704">
           <caret line="33" selection-start-line="33" selection-end-line="35" selection-end-column="23" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -594,7 +577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -613,7 +596,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,7 +624,7 @@
         <state relative-caret-position="682">
           <caret line="32" column="13" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="13" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -675,7 +658,7 @@
         <state relative-caret-position="682">
           <caret line="32" column="13" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="13" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -705,37 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facedetection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="21" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TEST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,12 +712,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="111" lean-forward="true" selection-start-line="26" selection-end-line="111" />
+        <state relative-caret-position="-695">
+          <caret line="110" column="31" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="31" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facedetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
