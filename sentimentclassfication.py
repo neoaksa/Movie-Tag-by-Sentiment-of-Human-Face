@@ -15,9 +15,9 @@ import matplotlib.pyplot as plt
 # --------------------------------
 # self defined functions area
 def YtoOutput(y):
-    output = np.zeros(shape=(1,8))
+    output = np.zeros(shape=(1,7))
     output[0,int(y)] = 1.0
-    return output
+    return output[0]
 
 # --------------------------------
 # read the file of image and classification
@@ -33,16 +33,16 @@ class_path = "/home/jie/Documents/Emotion/"
 #         with open(path, "r", encoding="utf-8") as newfile:
 #             txtdata = newfile.read()
 #             # set the classification to dictionary
-#             dic_class[path[:-12]+".png"] = txtdata[3]
+#             dic_class[path[:-12]+".png"] = str(int(txtdata[3]) - 1)
 #             # more extended sample(optional)
 #             path_pre1 = path[:-20] \
 #                         + (8-len(str(int(path[-20:-12])-2)))*"0" \
 #                         + str(int(path[-20:-12])-2)
-#             # path_pre2 = path[:-20] \
-#             #             + (8 - len(str(int(path[-20:-12]) - 4))) * "0" \
-#                         # + str(int(path[-20:-12]) - 4)
-#             dic_class[path_pre1 + ".png"] = txtdata[3]
-#             # dic_class[path_pre2 + ".png"] = txtdata[3]
+#             path_pre2 = path[:-20] \
+#                         + (8 - len(str(int(path[-20:-12]) - 3))) * "0" \
+#                         + str(int(path[-20:-12]) - 3)
+#             dic_class[path_pre1 + ".png"] = str(int(txtdata[3]) - 1)
+#             dic_class[path_pre2 + ".png"] = str(int(txtdata[3]) - 1)
 #
 # # trained face classifier
 # face_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_frontalface_default.xml')
@@ -96,9 +96,9 @@ class_path = "/home/jie/Documents/Emotion/"
 #     # img = cv2.Laplacian(img, cv2.CV_64F)  # Laplacian
 #     img = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)   # gradient by x axis
 #     # img = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)   # gradient by y axis
-#     # img_x = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=7) # gradient by degree
-#     # img_y = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=7) # gradient by degree
-#     # img = cv2.phase(img_x,img_y,angleInDegrees=False, angle=math.pi/4 * 3)    # gradient by degree
+#     # img_x = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=5) # gradient by degree
+#     # img_y = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=5) # gradient by degree
+#     # img = cv2.phase(img_x,img_y,angleInDegrees=True, angle=0.45 )    # gradient by degree
 #     # 3. canny
 #     # img = cv2.Canny(img, 100, 200)
 #     # plot face
@@ -107,7 +107,8 @@ class_path = "/home/jie/Documents/Emotion/"
 #     if k == 27:
 #         break
 #     # normalization
-#     img *= 255.0 / img.max()
+#     min, max = img.min(), img.max()
+#     img = (img - min)/(max-min)
 #     # print(len(img.flatten()))
 #     x = np.vstack((x, img.flatten()))
 #     y = np.vstack((y, dic_class[key]))
@@ -116,7 +117,6 @@ class_path = "/home/jie/Documents/Emotion/"
 # # save pre-handled data
 # cv2.destroyAllWindows()
 # y_tag = [YtoOutput(item) for item in y]
-# y_tag = np.vstack(y_tag)[:,1:8]
 # np.save("/home/jie/Documents/x.npy",x)
 # np.save("/home/jie/Documents/y.npy",y_tag)
 # print("saved!")
@@ -127,7 +127,7 @@ x = np.load("/home/jie/Documents/x.npy")
 y = np.load("/home/jie/Documents/y.npy")
 # --------------------------------
 # PCA analysis to reduce features
-pca = PCA(n_components=60, whiten=True,svd_solver='auto')
+pca = PCA(n_components=100, whiten=True,svd_solver='auto')
 x = pca.fit_transform(x)
 joblib.dump(pca, '/home/jie/Documents/pca.pkl')
 # plot PCA curve
@@ -144,8 +144,8 @@ for train_index, test_index in sss.split(x,y):
     y_train, y_test = y[train_index,:], y[test_index,:]
 # --------------------------------
 # MLP model
-clf = MLPClassifier(hidden_layer_sizes=(35,20), max_iter=2000,learning_rate="adaptive",
-                    learning_rate_init=0.1,momentum=0.2,activation="logistic",
+clf = MLPClassifier(hidden_layer_sizes=(40,30), max_iter=1000,learning_rate="adaptive",
+                    learning_rate_init=0.1,momentum=0.5,activation="logistic",
                      solver='sgd', verbose=True,  random_state=20, batch_size=10)
 clf.fit(x_train, y_train)
 # save model

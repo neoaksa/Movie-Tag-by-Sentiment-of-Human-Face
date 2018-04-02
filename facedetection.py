@@ -25,24 +25,24 @@ while 1:
         # detect
         dlib_db = "./dlib/shape_predictor_68_face_landmarks.dat"
         crop_img = gray[y:y+h,x:x+w]
-        predictor = dlib.shape_predictor(dlib_db)
-        rect = dlib.rectangle(0, 0, h, w)
-        landmarks = np.matrix([[p.x, p.y] for p in predictor(crop_img, rect).parts()])
-        landmarks = np.squeeze(np.array(landmarks))
-        FACE_POINTS = [
-            # list(range(0, 17)),  # JAWLINE_POINTS
-            list(range(17, 22)),  # RIGHT_EYEBROW_POINTS
-            list(range(22, 27)),  # LEFT_EYEBROW_POINTS
-            # list(range(27, 36)),  # NOSE_POINTS
-            list(range(36, 42)),  # RIGHT_EYE_POINTs
-            list(range(42, 48)),  # LEFT_EYE_POINTS
-            list(range(48, 61)),  # MOUTH_OUTLINE_POINTS
-            list(range(61, 68))]  # MOUTH_INNER_POINTS
-        # link related points
-        for face_lists in FACE_POINTS:
-            for point in face_lists[1:]:
-                cv2.line(crop_img, (landmarks[point - 1][0], landmarks[point - 1][1]),
-                         (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 10)
+        # predictor = dlib.shape_predictor(dlib_db)
+        # rect = dlib.rectangle(0, 0, h, w)
+        # landmarks = np.matrix([[p.x, p.y] for p in predictor(crop_img, rect).parts()])
+        # landmarks = np.squeeze(np.array(landmarks))
+        # FACE_POINTS = [
+        #     # list(range(0, 17)),  # JAWLINE_POINTS
+        #     list(range(17, 22)),  # RIGHT_EYEBROW_POINTS
+        #     list(range(22, 27)),  # LEFT_EYEBROW_POINTS
+        #     # list(range(27, 36)),  # NOSE_POINTS
+        #     list(range(36, 42)),  # RIGHT_EYE_POINTs
+        #     list(range(42, 48)),  # LEFT_EYE_POINTS
+        #     list(range(48, 61)),  # MOUTH_OUTLINE_POINTS
+        #     list(range(61, 68))]  # MOUTH_INNER_POINTS
+        # # link related points
+        # for face_lists in FACE_POINTS:
+        #     for point in face_lists[1:]:
+        #         cv2.line(crop_img, (landmarks[point - 1][0], landmarks[point - 1][1]),
+        #                  (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 10)
         crop_img = cv2.Sobel(crop_img, cv2.CV_64F, 1, 0, ksize=5)  # gradient by x axis
         crop_img = cv2.resize(crop_img,(200,200))
         crop_img *= 255.0 / crop_img.max()
