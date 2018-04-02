@@ -4,7 +4,7 @@ import cv2
 import dlib
 from sklearn.externals import joblib
 import urllib.request
-
+import configparser
 
 # METHOD #1: OpenCV, NumPy, and urllib
 def url_to_image(url):
@@ -17,13 +17,15 @@ def url_to_image(url):
     # return the image
     return image
 
-
+# read config file
+config = configparser.ConfigParser()
+config.read("config.ini")
 # multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
 
 # https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
-face_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(config["default"]["face_cascade"])
 # https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_eye.xml
-eye_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_eye.xml')
+# eye_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_eye.xml')
 
 
 filename = "http://www.gpb.eu/wp-content/uploads/2015/07/Comtempt.png"
@@ -32,9 +34,9 @@ img = url_to_image(filename)
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-pca = joblib.load('/home/jie/Documents/pca.pkl')
-clf = joblib.load('/home/jie/Documents/clf.pkl')
-dlib_db = "./dlib/shape_predictor_68_face_landmarks.dat"
+pca = joblib.load(config["default"]["pca_model"])
+clf = joblib.load(config["default"]["mlp_model"])
+dlib_db = config["default"]["dlib_db"]
 # cut pixel of x and y axis
 resize_pixel = 200
 cut_pixel_x = int(resize_pixel * 0)

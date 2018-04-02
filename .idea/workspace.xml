@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ce4ecc-273d-4aaa-8e77-42661b0546a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Movie Tag by Sentiment of Human Face.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Movie Tag by Sentiment of Human Face.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentimentclassfication.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentimentclassfication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image-detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/image-detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.ini" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" lean-forward="true" selection-end-line="10" />
+            <state relative-caret-position="44">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image-detection.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/image-detection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,8 +37,8 @@
       <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="520">
+              <caret line="155" column="47" lean-forward="true" selection-start-line="155" selection-start-column="17" selection-end-line="155" selection-end-column="47" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -64,10 +72,10 @@
         <option value="$PROJECT_DIR$/main.ipynb" />
         <option value="$PROJECT_DIR$/model param" />
         <option value="$PROJECT_DIR$/facedetection.py" />
-        <option value="$PROJECT_DIR$/image-detection.py" />
         <option value="$PROJECT_DIR$/TEST.py" />
         <option value="$PROJECT_DIR$/sentimentclassfication.py" />
         <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/image-detection.py" />
       </list>
     </option>
   </component>
@@ -132,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sentimentclassfication">
+  <component name="RunManager" selected="Python.image-detection">
     <configuration name="TEST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Movie Tag by Sentiment of Human Face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,9 +238,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.image-detection" />
         <item itemvalue="Python.sentimentclassfication" />
         <item itemvalue="Python.TEST" />
-        <item itemvalue="Python.image-detection" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +315,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sentimentclassfication.py</url>
+          <url />
           <line>63</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
@@ -613,16 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image-detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model param">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -642,20 +640,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="520">
+          <caret line="155" column="47" lean-forward="true" selection-start-line="155" selection-start-column="17" selection-end-line="155" selection-end-column="47" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
+    <entry file="file://$PROJECT_DIR$/image-detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-end-line="10" />
+        <state relative-caret-position="836">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
