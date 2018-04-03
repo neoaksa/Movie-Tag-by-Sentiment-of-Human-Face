@@ -5,8 +5,9 @@ import dlib
 from sklearn.externals import joblib
 import urllib.request
 import configparser
+import face_enum
 
-# METHOD #1: OpenCV, NumPy, and urllib
+# 0=anger, 1=contempt, 2=disgust, 3=fear, 4=happy, 5=sadness, 6=surprise)
 def url_to_image(url):
     # download the image, convert it to a NumPy array, and then read
     # it into OpenCV format
@@ -28,7 +29,7 @@ face_cascade = cv2.CascadeClassifier(config["default"]["face_cascade"])
 # eye_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_eye.xml')
 
 
-filename = "http://freebeacon.com/wp-content/uploads/2015/07/Hillary-Clinton12.jpg"
+filename = config["web_face"]["face_link"]
 img = url_to_image(filename)
 # img = cv2.imread("/media/d/human face/cohn-kanade-images/S503/006/S503_006_00000020.png")
 
@@ -53,7 +54,7 @@ for (x_pix, y_pix, w, h) in faces:
 # resize
 crop_img = cv2.resize(crop_img,(resize_pixel,resize_pixel))
 predictor = dlib.shape_predictor(dlib_db)
-rect = dlib.rectangle(0, 0, h, w)
+rect = dlib.rectangle(0, 0, resize_pixel, resize_pixel)
 landmarks = np.matrix([[p.x, p.y] for p in predictor(crop_img, rect).parts()])
 landmarks = np.squeeze(np.array(landmarks))
 FACE_POINTS = [
@@ -81,11 +82,21 @@ y_pred = clf.predict(x)
 print(y_pred)
 # print(y_pred.argmax(axis=1))
 
+# put result into image
+font = cv2.FONT_HERSHEY_SIMPLEX
+bottomLeftCornerOfText = (10,int(img.shape[0]*0.9))
+fontScale = 1
+fontColor = (0,0,255)
+lineType = cv2.LINE_4
+
+
+cv2.putText(img, face_enum.Face(y_pred[0]).name, bottomLeftCornerOfText, font, fontScale, fontColor, lineType)
 # eyes = eye_cascade.detectMultiScale(roi_gray)
 # for (ex, ey, ew, eh) in eyes:
 #     cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
 cv2.imshow('img', img)
 cv2.imshow('crop_img', show_img)
+cv2.moveWindow("crop_img",600,200)
 if cv2.waitKey() & 0xff == 27:
     quit()
 
