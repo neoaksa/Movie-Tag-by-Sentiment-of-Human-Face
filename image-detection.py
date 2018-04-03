@@ -28,14 +28,15 @@ face_cascade = cv2.CascadeClassifier(config["default"]["face_cascade"])
 # eye_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_eye.xml')
 
 
-filename = "http://www.gpb.eu/wp-content/uploads/2015/07/Comtempt.png"
+filename = "http://freebeacon.com/wp-content/uploads/2015/07/Hillary-Clinton12.jpg"
 img = url_to_image(filename)
 # img = cv2.imread("/media/d/human face/cohn-kanade-images/S503/006/S503_006_00000020.png")
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 pca = joblib.load(config["default"]["pca_model"])
-clf = joblib.load(config["default"]["mlp_model"])
+# clf = joblib.load(config["default"]["mlp_model"])
+clf = joblib.load(config["default"]["svm_model"])
 dlib_db = config["default"]["dlib_db"]
 # cut pixel of x and y axis
 resize_pixel = 200
@@ -70,8 +71,6 @@ for face_lists in FACE_POINTS:
         cv2.line(crop_img, (landmarks[point - 1][0], landmarks[point - 1][1]),
                  (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 10)
 crop_img = cv2.Sobel(crop_img, cv2.CV_64F, 1, 0, ksize=5)  # gradient by x axis
-
-
 show_img = crop_img
 min, max = crop_img.min(), crop_img.max()
 crop_img = (crop_img - min)/(max-min)
@@ -80,8 +79,8 @@ x = pca.transform(crop_img.reshape(1,crop_img.shape[0]))
 y_pred = clf.predict(x)
 # 0=anger, 1=contempt, 2=disgust, 3=fear, 4=happy, 5=sadness, 6=surprise)
 print(y_pred)
-print(y_pred.argmax(axis=1))
-#
+# print(y_pred.argmax(axis=1))
+
 # eyes = eye_cascade.detectMultiScale(roi_gray)
 # for (ex, ey, ew, eh) in eyes:
 #     cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
