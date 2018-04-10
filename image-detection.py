@@ -30,8 +30,10 @@ face_cascade = cv2.CascadeClassifier(config["default"]["face_cascade"])
 
 
 filename = config["web_face"]["face_link"]
-img = url_to_image(filename)
-# img = cv2.imread("/media/d/human face/cohn-kanade-images/S503/006/S503_006_00000020.png")
+# img = url_to_image(filename)
+
+filename = config["web_face"]["face_local"]
+img = cv2.imread(filename)
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)

@@ -91,7 +91,7 @@ class_path = config["default"]["class_path"]
 #     for face_lists in FACE_POINTS:
 #         for point in face_lists[1:]:
 #             cv2.line(img, (landmarks[point - 1][0], landmarks[point - 1][1]),
-#                      (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 10)
+#                      (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 6)
 #     # 1. SIFT
 #     # need to run "pip install opencv-contrib-python" if missing xfeature2d
 #     # sift = cv2.xfeatures2d.SIFT_create()
@@ -136,10 +136,10 @@ pca = PCA(n_components=60, whiten=True,svd_solver='auto')
 x = pca.fit_transform(x)
 joblib.dump(pca, config["default"]["pca_model"])
 # plot PCA curve
-# plt.plot(np.cumsum(pca.explained_variance_ratio_))
-# plt.xlabel('number of components')
-# plt.ylabel('cumulative explained variance')
-# plt.show()
+plt.plot(np.cumsum(pca.explained_variance_ratio_))
+plt.xlabel('number of components')
+plt.ylabel('cumulative explained variance')
+plt.show()
 # --------------------------------
 # split training and validation dataset
 # x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=50)
