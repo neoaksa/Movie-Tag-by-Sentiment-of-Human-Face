@@ -1,4 +1,5 @@
 # Sentiment-Detection-by-Human-face
+Author: Jie Tao, Joel Smith
 
 The purpose of this project is to use supervised learning to detect sentiment in human faces. This could be used for smart human-computer interaction, such as lie detection, or adding an emotion tag to a movie or video. Most of the research we found in this area uses deep learning, especially the most recent work. The newest research paper we found on the topic that does not use deep learning is from 2008. Our plan was to not use deep learning and see how well our model performs compared to state of the art deep learning models. 
 According to the trained model, we can detect 7 different emotions (1=anger, 2=contempt, 3=disgust, 4=fear, 5=happy, 6=sadness, 7=surprise) according to any given frontal view. In this project, we excluded 0 - neutral. 
