@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3ce4ecc-273d-4aaa-8e77-42661b0546a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image-detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/image-detection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sentimentclassfication.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentimentclassfication.py" afterDir="false" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="132">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -28,8 +29,8 @@
       <file leaf-file-name="image-detection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image-detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="-23">
+              <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -40,10 +41,22 @@
       <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="145" column="28" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="28" />
+            <state relative-caret-position="502">
+              <caret line="201" column="40" lean-forward="true" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TEST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,15 +89,15 @@
         <option value="$PROJECT_DIR$/main.ipynb" />
         <option value="$PROJECT_DIR$/model param" />
         <option value="$PROJECT_DIR$/facedetection.py" />
-        <option value="$PROJECT_DIR$/TEST.py" />
         <option value="$PROJECT_DIR$/face_enum.py" />
+        <option value="$PROJECT_DIR$/TEST.py" />
         <option value="$PROJECT_DIR$/image-detection.py" />
-        <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/sentimentclassfication.py" />
+        <option value="$PROJECT_DIR$/config.ini" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="114" />
     <option name="width" value="1910" />
     <option name="height" value="789" />
@@ -111,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,7 +136,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sentimentclassfication">
+  <component name="RunManager" selected="Python.image-detection">
     <configuration name="TEST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Movie Tag by Sentiment of Human Face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,7 +248,6 @@
       <option name="ipnbPort" value="8888" />
     </configuration>
     <list>
-      <item itemvalue="Jupyter Notebook.Movie Tag by Sentiment of Human Face" />
       <item itemvalue="Python.facedetection" />
       <item itemvalue="Python.sentimentclassfication" />
       <item itemvalue="Python.TEST" />
@@ -243,8 +255,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sentimentclassfication" />
         <item itemvalue="Python.image-detection" />
+        <item itemvalue="Python.sentimentclassfication" />
         <item itemvalue="Python.TEST" />
       </list>
     </recent_temporary>
@@ -272,15 +284,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-3" width="1920" height="1083" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="-3" width="1920" height="1083" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14074855" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32947367" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32947367" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32842106" />
-      <window_info active="true" anchor="bottom" x="21" y="693" width="1920" height="321" id="Run" order="2" visible="true" weight="0.32842106" />
+      <window_info anchor="bottom" x="21" y="693" width="1920" height="321" id="Run" order="2" weight="0.3926316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32947367" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -318,7 +329,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="118" />
+      <option name="time" value="138" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -326,6 +337,9 @@
         <watch expression="crop_img.reshape(crop_img.shape[0],-1)" />
         <watch expression="output[0]" language="Python" />
         <watch expression="face_enum.Face(y_pred[0])" />
+        <watch expression="crop_img.reshape(1,crop_img.shape[0])" />
+        <watch expression="pixel_size" />
+        <watch expression="img.flatten()" />
       </configuration>
     </watches-manager>
   </component>
@@ -339,16 +353,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/image-detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2838">
@@ -610,33 +614,12 @@
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/sklearn/utils/validation.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/shape_base.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/_methods.py" />
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py" />
     <entry file="file://$PROJECT_DIR$/facedetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TEST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face_enum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -655,17 +638,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face_enum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="132">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image-detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="-23">
+          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -674,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="145" column="28" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="28" />
+        <state relative-caret-position="502">
+          <caret line="201" column="40" lean-forward="true" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

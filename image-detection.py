@@ -29,7 +29,7 @@ face_cascade = cv2.CascadeClassifier(config["default"]["face_cascade"])
 # eye_cascade = cv2.CascadeClassifier('/home/jie/taoj@mail.gvsu.edu/GitHub/opencv/haarcascade_eye.xml')
 
 
-filename = config["web_face"]["face_link"]
+# filename = config["web_face"]["face_link"]
 # img = url_to_image(filename)
 
 filename = config["web_face"]["face_local"]
@@ -66,14 +66,15 @@ FACE_POINTS = [
     # list(range(27, 36)),  # NOSE_POINTS
     list(range(36, 42)),  # RIGHT_EYE_POINTs
     list(range(42, 48)),  # LEFT_EYE_POINTS
-    list(range(48, 61)),  # MOUTH_OUTLINE_POINTS
-    list(range(61, 68))]  # MOUTH_INNER_POINTS
+    list(range(48, 61))] # MOUTH_OUTLINE_POINTS
+    # list(range(61, 68))]  # MOUTH_INNER_POINTS
 # link related points
 for face_lists in FACE_POINTS:
     for point in face_lists[1:]:
         cv2.line(crop_img, (landmarks[point - 1][0], landmarks[point - 1][1]),
-                 (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 10)
-crop_img = cv2.Sobel(crop_img, cv2.CV_64F, 1, 0, ksize=5)  # gradient by x axis
+                 (landmarks[point][0], landmarks[point][1]), (0, 0, 255), 5)
+crop_img = cv2.Sobel(crop_img, cv2.CV_8U, 1, 0, ksize=5)  # gradient by x axis
+# crop_img = cv2.Canny(crop_img, 50, 200)
 show_img = crop_img
 min, max = crop_img.min(), crop_img.max()
 crop_img = (crop_img - min)/(max-min)
