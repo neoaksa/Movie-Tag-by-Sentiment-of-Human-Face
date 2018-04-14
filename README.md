@@ -40,11 +40,12 @@ Figure 3 - with connected points, we can find different shapes under different e
 ### Feature extraction
 After the face detection, we tried to do the feature extraction with four different ways:
 SIFT
-SIFT use difference of Gaussian to detect the object features. We can find the small circles has capture some important information, such as frown and edge of nose. See Figure 4.
+SIFT use difference of Gaussian to detect the object features. We can find the small key points has capturing some important information, such as frown and edge of nose. See Figure 4. Each keypoint consists of descriptor array with 128 length. Since the number of keypoints in each image are different, we use k-mean to reduce number of keypoints to 100 cluster with 128 dimensions for each image.
 
 ![figure4](image/figure4.png)
+![figure4.2](image/figure4.2.png)
 
-Figure 4 - feature extraction with SIFT
+Figure 4 - feature extraction with SIFT, which is transferred to 120*128 array by K-mean.
 
 Gradient
 Gradient is a directional change in intensity or color of image. Here we use gray image,    so we should find the intensity change with different orientations. Figure 5 shows how gradient works in X axis and Y axis. We can find X axis is better than Y axis.
@@ -64,11 +65,17 @@ Figure 6 - feature extraction with drawing outline
 After feature extraction, the images have been normalized and saved in a matrix with its corresponding label. Then the matrix is persistent into two npy files, called x.npy and y.npy. Thus, we don’t have to pre-process image when training model. 
 
 ### Model design
-Since there are 200*200*327=13,080,000 pixels totally and unknown noise in the pre-processed images, PCA was executed to figure out major components. Figure 7 shows 55% information can be explained when reaching to 60 components with gradient feature extraction(other feature extraction functions grained similar results). So, we chose first 60 components as inputs for training and validation.  
+Since there are 200*200*327=13,080,000 pixels totally and unknown noise in the pre-processed images, PCA was executed to figure out major components. Figure 7.1 shows 55% information can be explained when reaching to 100 components with gradient feature extraction.. So, we chose first 100 components as inputs for training and validation. For canny feature extraction, we didn’t use PCA for MLP since PCA plot is much more like linear, Figure 7.2.   
 
-![figure7](image/figure7.png)
+![figure7.1](image/figure7.png)
 
-Figure 7 - PCA plot
+Figure 7.1 - PCA plot
+
+![figure7.2](image/figure7.2.png)
+
+Figure 7.2 - PCA plot
+
+
 In the source database, only the last frame was labeled( total 327 frames). Lack of samples will easily lead to overfitting or bad performance in the generalization. To solve this problem,  we pick up not only the last frame denoted as i, but also i -2, i - 4 frames in the same series( a series is from neutral to peak expression in one subject). Figure 8 show the few changes in these three images. 
 
 ![figure8-1](image/figure8-1.png)
@@ -77,6 +84,7 @@ In the source database, only the last frame was labeled( total 327 frames). Lack
 
 Figure 8 frown and mouth shape changes in these three images
 
+For all samples, we did randomly disturbance(horizontal flip, tuning brightness and rotation  ±3 degree). The total sample size is increased to 327*3=981.（Due to disturbance, few samples can not be face detected, the sample used for traning and test will less than 981)  
 To keep balance of training samples,     stratified shuffle Split is executed which split samples into train and validation groups by label field. It guaranteed each classification has been trained in the model.
 After all above steps, we construct two models: MLP and SVM. Both of them work well in the field of classification. The detail of tuning can be found in performance section.
 

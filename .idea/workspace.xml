@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ce4ecc-273d-4aaa-8e77-42661b0546a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image-detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/image-detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentimentclassfication.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentimentclassfication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -29,8 +25,8 @@
       <file leaf-file-name="image-detection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image-detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+            <state relative-caret-position="1276">
+              <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -38,14 +34,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sentimentclassfication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="201" column="40" lean-forward="true" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
+            <state relative-caret-position="504">
+              <caret line="201" column="40" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="421">
+                <caret line="47" column="89" selection-start-line="47" selection-start-column="89" selection-end-line="47" selection-end-column="89" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -94,6 +102,7 @@
         <option value="$PROJECT_DIR$/image-detection.py" />
         <option value="$PROJECT_DIR$/sentimentclassfication.py" />
         <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -285,8 +294,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-3" width="1920" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14074855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14074855" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32947367" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32947367" />
@@ -307,21 +317,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1421875" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3302564" />
-      <window_info anchor="bottom" id="Python Console" order="9" visible="true" weight="0.32923076" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39897436" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="9" visible="true" weight="0.32923076" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -611,7 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/sklearn/utils/validation.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/shape_base.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/_methods.py" />
@@ -620,13 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
         </state>
       </provider>
     </entry>
@@ -672,14 +674,14 @@
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image-detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+        <state relative-caret-position="1276">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -688,11 +690,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sentimentclassfication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="201" column="40" lean-forward="true" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
+        <state relative-caret-position="504">
+          <caret line="201" column="40" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="40" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="421">
+            <caret line="47" column="89" selection-start-line="47" selection-start-column="89" selection-end-line="47" selection-end-column="89" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
